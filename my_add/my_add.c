@@ -8,13 +8,14 @@
 
 #include "my_add.h"
 
-#define MAX_BINARY_LENGTH 20 // maximal binary representation of 999999 * 2
+#define MAX_BINARY_LENGTH 20 /* maximal binary representation of 999999 * 2 */
 
 
 int main() {
 	unsigned int first_operand;
-
 	unsigned int second_operand;
+	unsigned int added_value;
+
 	int scanf_value;
 
 
@@ -40,7 +41,7 @@ int main() {
 	}
 
 	printf("Now call the my_add function.\n");
-	unsigned int added_value = my_add(first_operand,second_operand);
+	added_value = my_add(first_operand,second_operand);
 
 	printf("Finally: I've added %u and %u and got the result of %u.\n",first_operand,second_operand, added_value);
 	return 0;
@@ -54,6 +55,7 @@ unsigned int my_add(unsigned int a, unsigned int b) {
 	unsigned int bit_b = 0;
 	unsigned int new_bit = 0;
 	unsigned int carry = 0;
+	int i;
 
 	/* printing the numbers values in binary representation */
 	printf("(my_add function) first operand binary representation: ");
@@ -63,7 +65,7 @@ unsigned int my_add(unsigned int a, unsigned int b) {
 	printf("\n");
 
 
-	for (int i=0; i<MAX_BINARY_LENGTH; i++) { /* iterating over numbers right to left */
+	for (i=0; i<MAX_BINARY_LENGTH; i++) { /* iterating over numbers right to left */
 		bit_a = (a & (1 << i)) >> i;
 		bit_b = (b & (1 << i)) >> i;
 
@@ -94,7 +96,8 @@ unsigned int my_add(unsigned int a, unsigned int b) {
 
 
 void binary_print(unsigned int n) {
-	for (int i=MAX_BINARY_LENGTH; i>=0; i--) { // iterating left to right printing each char
+	int i;
+	for (i=MAX_BINARY_LENGTH; i>=0; i--) { /* iterating left to right printing each char */
 		printf("%u", (n & (1 << i))>>i);
 	}
 
