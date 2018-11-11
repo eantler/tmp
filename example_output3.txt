@@ -1,0 +1,2 @@
+Please insert polindrome-suspected text:The received text: a b c b a
+It is indeed a polindrome ! function returned TRUE
