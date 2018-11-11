@@ -1,2 +1,0 @@
-Please insert polindrome-suspected text:The received text: abcdcdba
-This is not a polindrome. function returned FALSE

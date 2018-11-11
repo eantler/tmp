@@ -13,7 +13,7 @@ int main() {
 	int is_polindrome;
 
 
-	printf("Please insert polindrome-suspected text:");
+	printf("Please insert polindrome-suspected text:\n");
 	scanf_value = scanf("%80[^\n]", buff);
 
 	if (scanf_value != 1) {
