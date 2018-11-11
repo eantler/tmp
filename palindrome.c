@@ -4,7 +4,7 @@
 
 #include "palindrome.h"
 
-#define BUFFER_SIZE 80 // Buffer size - max string length
+#define BUFFER_SIZE 80 /* Buffer size - max string length */
 
 int main() {
 	char buff[BUFFER_SIZE];
