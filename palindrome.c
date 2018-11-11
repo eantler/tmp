@@ -27,10 +27,10 @@ int main() {
 	is_polindrome = polindrome(buff,0,length-1);
 
 	if (is_polindrome) {
-		printf("It is indeed a polindrome ! function returned TRUE");
+		printf("It is indeed a polindrome ! function returned TRUE\n");
 
 	} else {
-		printf("This is not a polindrome. function returned FALSE");
+		printf("This is not a polindrome. function returned FALSE\n");
 	}
 
 	return 0;
