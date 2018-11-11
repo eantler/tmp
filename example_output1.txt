@@ -1,0 +1,2 @@
+Please insert polindrome-suspected text:The received text: rats live on no evil star
+It is indeed a polindrome ! function returned TRUE
