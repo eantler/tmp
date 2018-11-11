@@ -10,6 +10,7 @@ int main() {
 	char buff[BUFFER_SIZE];
 	unsigned long length;
 	int scanf_value;
+	int is_polindrome;
 
 
 	printf("Please insert polindrome-suspected text:");
@@ -23,7 +24,7 @@ int main() {
 	}
 
 	length = strlen(buff);
-	int is_polindrome = polindrome(buff,0,length-1);
+	is_polindrome = polindrome(buff,0,length-1);
 
 	if (is_polindrome) {
 		printf("It is indeed a polindrome ! function returned TRUE");
