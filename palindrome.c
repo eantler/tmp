@@ -8,19 +8,21 @@
 
 int main() {
 	char buff[BUFFER_SIZE];
+	unsigned long length;
+	int scanf_value;
+
 
 	printf("Please insert polindrome-suspected text:");
-	int scanf_value = scanf("%80[^\n]", buff);
+	scanf_value = scanf("%80[^\n]", buff);
 
 	if (scanf_value != 1) {
 		printf("Something went wrong while reading input.\n");
 		return -1;
-	}
-	else {
+	} else {
 		printf("The received text: %s\n",buff);
 	}
 
-	unsigned long length = strlen(buff);
+	length = strlen(buff);
 	int is_polindrome = polindrome(buff,0,length-1);
 
 	if (is_polindrome) {
