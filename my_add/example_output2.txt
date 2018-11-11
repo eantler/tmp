@@ -1,0 +1,9 @@
+Please insert first operand:
+First operand received: 12
+Please insert second operand:
+Second operand received: 766
+Now call the my_add function.
+(my_add function) first operand binary representation: 000000000000000001100
+(my_add function) second operand binary representation: 000000000001011111110
+(my_add function) the added value (returned) in binary representation: 000000000001100001010
+Finally: I've added 12 and 766 and got the result of 778.
