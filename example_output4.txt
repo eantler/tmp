@@ -1,2 +1,3 @@
-Please insert polindrome-suspected text:The received text: step on no pets
+Please insert polindrome-suspected text:
+The received text: step on no pets
 It is indeed a polindrome ! function returned TRUE
