@@ -2,6 +2,8 @@
  *  This program reads a string input from the user and returns an answer if this is a polindrome or not using polindrome function.
  */
 
+#include "palindrome.h"
+
 #define BUFFER_SIZE 80 // Buffer size - max string length
 
 int main() {
@@ -38,7 +40,7 @@ int main() {
 int polindrome(char* buff, int start_ptr, int end_ptr) {
 
 	if (start_ptr == end_ptr) return 1;
-	if (buff[start_ptr] == ' ') return polindrome(buff, start_ptr+1,end_ptr); // excaping spaces
+	if (buff[start_ptr] == ' ') return polindrome(buff, start_ptr+1,end_ptr); /* excaping spaces */
 	if (buff[end_ptr] == ' ') return polindrome(buff, start_ptr,end_ptr-1);
 	if (start_ptr == end_ptr - 1) return (buff[start_ptr]==buff[end_ptr]);
 
