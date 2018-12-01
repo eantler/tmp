@@ -69,7 +69,7 @@ int get_set(int * set_array) {
 				if (set_array[i] == '\0' && i != zero_indicator) {
 					/* if we got to an empty cell, insert our value there. */
 					set_array[i] = scanf_result;
-					if (scanf_result == 0) zero_indicator = i; // set 0 indicator if that's the input.
+					if (scanf_result == 0) zero_indicator = i; /* set 0 indicator if that's the input. */
 					exists_flag = 1;
 					counter++;
 				} else if (set_array[i] == scanf_result) {
