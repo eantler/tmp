@@ -1,3 +1,0 @@
-Please start inserting integers seperated by ' ' or by a newline '\n':
-Read total of 0 distinct elements.
-Elements are: {} (empty) 
