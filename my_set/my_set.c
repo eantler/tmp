@@ -87,7 +87,6 @@ int get_set(int * set_array) {
 		}
 
 		scanf_value = scanf("%d", &scanf_result);
-		printf("Scanf value = %d\n",scanf_value);
 	}
 
 	return counter;
