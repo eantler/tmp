@@ -65,7 +65,7 @@ int get_set(int * set_array) {
 			printf("Successful read of integer: %d\n",scanf_result);
 			i = 0;
 			exists_flag = 0;
-			while (i < MAX_SET_SIZE && !exists_flag) { // iterating over the array
+			while (i < MAX_SET_SIZE && !exists_flag) { /* iterating over the array */
 				if (set_array[i] == '\0' && i != zero_indicator) {
 					/* if we got to an empty cell, insert our value there. */
 					set_array[i] = scanf_result;
