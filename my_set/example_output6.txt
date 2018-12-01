@@ -1,0 +1,30 @@
+Please start inserting integers seperated by ' ' or by a newline '\n':
+Successful read of integer: -1
+Successful read of integer: -2
+Successful read of integer: -3
+Successful read of integer: -4
+Successful read of integer: -5
+Successful read of integer: 19
+Successful read of integer: 21
+Successful read of integer: 33
+Successful read of integer: 334
+Successful read of integer: 443
+Successful read of integer: 29
+Successful read of integer: 998
+Successful read of integer: 999
+Successful read of integer: 1012
+Successful read of integer: 31
+Successful read of integer: 54
+Successful read of integer: 33
+Successful read of integer: 44
+Successful read of integer: 22
+Successful read of integer: 13
+Successful read of integer: 411
+Successful read of integer: 223
+Successful read of integer: 143
+Successful read of integer: 23322
+Successful read of integer: 4433
+Successful read of integer: -1
+Successful read of integer: 12
+Read total of 25 distinct elements.
+Elements are: -1 -2 -3 -4 -5 19 21 33 334 443 29 998 999 1012 31 54 44 22 13 411 223 143 23322 4433 12

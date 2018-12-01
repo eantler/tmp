@@ -1,0 +1,14 @@
+Please start inserting integers seperated by ' ' or by a newline '\n':
+Successful read of integer: 1
+Successful read of integer: 3
+Successful read of integer: -44
+Successful read of integer: 44
+Successful read of integer: -666
+Successful read of integer: 1
+Successful read of integer: 3
+Successful read of integer: 17
+Successful read of integer: -22
+Successful read of integer: 8
+Successful read of integer: 10
+Read total of 9 distinct elements.
+Elements are: 1 3 -44 44 -666 17 -22 8 10
