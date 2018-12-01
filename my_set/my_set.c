@@ -51,10 +51,10 @@ int get_set(int * set_array) {
 	 *
 	 */
 	int scanf_value, scanf_result, i, exists_flag;
-	int zero_indicator = -1; // we want to allow 0 as an input.
-	int counter = 0; // counter of number of input elements
+	int zero_indicator = -1; /* we want to allow 0 as an input. */
+	int counter = 0; /* counter of number of input elements */
 
-	nullify_array(set_array); // clean the array
+	nullify_array(set_array); /* clean the array */
 
 	printf("Please start inserting integers seperated by ' ' or by a newline '\\n':\n");
 	scanf_value = scanf("%d",&scanf_result);
@@ -67,21 +67,21 @@ int get_set(int * set_array) {
 			exists_flag = 0;
 			while (i < MAX_SET_SIZE && !exists_flag) { // iterating over the array
 				if (set_array[i] == '\0' && i != zero_indicator) {
-					// if we got to an empty cell, insert our value there.
+					/* if we got to an empty cell, insert our value there. */
 					set_array[i] = scanf_result;
 					if (scanf_result == 0) zero_indicator = i; // set 0 indicator if that's the input.
 					exists_flag = 1;
 					counter++;
 				} else if (set_array[i] == scanf_result) {
-					// if we are on a non-empty cell that equals out input, step out of loop.
+					/* if we are on a non-empty cell that equals out input, step out of loop. */
 					exists_flag = 1 ;
 				} else {
-					// else we are on a non empty cell != input so we need to move forward in the array.
+					/* else we are on a non empty cell != input so we need to move forward in the array. */
 					i++;
 				}
 			}
 
-			// If we see too many distinct values that we can't store, we just let the user know.
+			/* If we see too many distinct values that we can't store, we just let the user know. */
 			if (i==MAX_SET_SIZE && !exists_flag) printf("Too many distinct values in the set so far, so skipping this one"
 					" out.\nCan't support more than %d distinct values\n", MAX_SET_SIZE);
 		}
