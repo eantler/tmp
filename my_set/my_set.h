@@ -12,6 +12,7 @@
  *
  */
 
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -20,6 +21,129 @@
 #ifndef MY_SET_H_
 #define MY_SET_H_
 
+/*
+ *  We we're later asked to print all of the input also at the end of the program.
+ *  Because input in not limited in length we need to have a dynamic datastructure.
+ *  Here we define the linked list structure and interface which will be used for that.
+ *
+ *  Because most insertions always happen at the end of array, I choose to hold a pointer
+ *  to that as well.
+ */
+
+typedef struct node {
+   int data;
+   struct node *next;
+} node;
+
+typedef struct {
+	 node *first_node;
+	 node *last_node;
+	 int length;
+} linked_list;
+
+/*
+ * Functions that will be used to manage that list.
+ */
+
+/*
+ * linked_list *create_liked_list()
+ * Allocates a new linked_list datastruncture and returns a pointer to in.
+ * If memory allocation fails, returns null.
+ *
+ */
+linked_list *create_linked_list();
+
+/*
+ * destory_linked_list(linked_list * ls)
+ * @param ls - the linked list pointer to be destoryed.
+ *
+ * This function expect ls to be an initiated linked_list.
+ * It frees all memory related to that linked_list.
+ *
+ */
+
+void destroy_linked_list(linked_list * ls);
+
+
+/*
+ * int push(linked_list * ls, int value);
+ *
+ * Function pushes a new value into the linked list.
+ *
+ * @params
+ * linked_list * ls - pointer to the linked list we need to push into
+ * int value - the value we need to push into the list
+ *
+ * @return
+ * If succesful then a pointer to the node that was added.
+ * Else NULL.
+ *
+ */
+
+node * push(linked_list * ls, int value);
+//arr = (struct array_list*)calloc(1, sizeof(struct array_list));
+// if(!arr) return NULL;
+
+
+/*
+ * int pop_first(linked_list * ls);
+ *
+ * Functions pops out the first item in the linked list ls.
+ * If frees memory related to that node.
+ *
+ * @param
+ * linked_list * ls - pointer to the linked list
+ *
+ * @return
+ * the value stores in the first place.
+ * If first place is null returns -1 (expects there to be a real value.
+ *
+ */
+
+int pop_first(linked_list * ls);
+
+/*
+ * int not_empty(linked_list * ls)
+ *
+ * Returns 1 if list is not empty, else returned 0
+ *
+ * @param
+ * linked_list * ls - pointer to list
+ */
+
+int not_empty(linked_list * ls);
+
+/*
+ * void print_and_pop
+ *
+ * Functions prints linked_list elements start to end poping them out of the array list.
+ *
+ * @params
+ * linked_list * ls - the list to be printed
+ */
+
+void print_and_pop(linked_list * ls);
+
+/*
+ * int list_length(linked_list * ls)
+ *
+ * Functions returns the list length
+ *
+ * @params
+ * linked_list * ls - the list
+ *
+ */
+
+int list_length(linked_list * ls);
+
+/*
+ * void print_linked_list (linked_list * ls)
+ *
+ * Prints a linked_list elements.
+ *
+ * @param
+ * linked_list * ls - the linked list to print
+ */
 /*
  * void get_set(int * set_array)
  *
@@ -33,13 +157,17 @@
  *
  * Function assumes a valid input of integers other than new line or EOF chars.
  *
+ * We we're later asked to print all input also at the end of everything so we will be recording
+ * all  input using a linked list.
+ *
  * params:
  * int * set_array: integers array of length MAX_SET_SIZE
+ * linked_list * ls: linked_list that will hold all the inputs to print in the end (OPTIONAL)
  *
  * returns: # of elements read from stdin
  *
  */
-int get_set(int * set_array);
+int get_set(int * set_array, linked_list * ls);
 
 /*
  * void print_set(int * set_array, int length)
