@@ -81,8 +81,6 @@ void destroy_linked_list(linked_list * ls);
  */
 
 node * push(linked_list * ls, int value);
-//arr = (struct array_list*)calloc(1, sizeof(struct array_list));
-// if(!arr) return NULL;
 
 
 /*
@@ -136,14 +134,6 @@ void print_and_pop(linked_list * ls);
 
 int list_length(linked_list * ls);
 
-/*
- * void print_linked_list (linked_list * ls)
- *
- * Prints a linked_list elements.
- *
- * @param
- * linked_list * ls - the linked list to print
- */
 /*
  * void get_set(int * set_array)
  *
