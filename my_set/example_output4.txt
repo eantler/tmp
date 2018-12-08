@@ -44,15 +44,5 @@ Successful read of integer: 1983
 Successful read of integer: 1982
 Successful read of integer: 2989
 Successful read of integer: 1
-Received a total input of length 45.
-This is the input provided:
- 1989 1982 1983 1984 1981 1982 1983 1984 1989 
-1982 1983 1984 1981 1982 1983 1984 1989 1982 1983 
-1984 1981 1982 1983 1984 2001 2002 -1 -1 2003 
-1 2 3 4 5 6 7 8 10 13 
-14 15 1983 1982 2989 1
 Read total of 22 distinct elements.
-Distinct set elements are: 
-1989 1982 1983 1984 1981 2001 2002 -1 2003 1 
-2 3 4 5 6 7 8 10 13 14 
-15 2989
+Elements are: 1989 1982 1983 1984 1981 2001 2002 -1 2003 1 2 3 4 5 6 7 8 10 13 14 15 2989

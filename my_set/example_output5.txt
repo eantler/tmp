@@ -27,13 +27,5 @@ Successful read of integer: 3
 Successful read of integer: -4
 Successful read of integer: -5
 Successful read of integer: -5
-Received a total input of length 28.
-This is the input provided:
- 1 2 3 4 5 6 7 8 9 
-10 11 12 13 14 15 16 17 18 19 
-18 17 20 21 23 3 -4 -5 -5
 Read total of 24 distinct elements.
-Distinct set elements are: 
-1 2 3 4 5 6 7 8 9 10 
-11 12 13 14 15 16 17 18 19 20 
-21 23 -4 -5
+Elements are: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 23 -4 -5

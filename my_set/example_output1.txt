@@ -16,10 +16,5 @@ Successful read of integer: 45
 Successful read of integer: 66
 Successful read of integer: 13
 Successful read of integer: 66
-Received a total input of length 17.
-This is the input provided:
- 13 13 13 45 -9 -9 -9 18 18 
-18 3 4 55 45 66 13 66
 Read total of 8 distinct elements.
-Distinct set elements are: 
-13 45 -9 18 3 4 55 66
+Elements are: 13 45 -9 18 3 4 55 66
