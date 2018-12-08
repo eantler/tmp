@@ -215,7 +215,7 @@ void print_and_pop (linked_list * ls) {
 	while (not_empty(ls)) {
 		value = pop_first(ls);
 		if (print_counter>0) printf(" ");
-		if (print_counter % 10 == 0) printf("\n"); /* newline for beauty */
+		if (print_counter % 10 == 0 && print_counter != 0) printf("\n"); /* newline for beauty */
 		print_counter++;
 		printf("%d", value);
 	}
