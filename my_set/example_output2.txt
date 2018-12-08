@@ -10,5 +10,10 @@ Successful read of integer: 17
 Successful read of integer: -22
 Successful read of integer: 8
 Successful read of integer: 10
+Received a total input of length 11.
+This is the input provided:
+ 1 3 -44 44 -666 1 3 17 -22 
+8 10
 Read total of 9 distinct elements.
-Elements are: 1 3 -44 44 -666 17 -22 8 10
+Distinct set elements are: 
+1 3 -44 44 -666 17 -22 8 10

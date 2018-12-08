@@ -1,3 +1,6 @@
 Please start inserting integers seperated by ' ' or by a newline '\n':
+Received a total input of length 0.
+This is the input provided:
+
 Read total of 0 distinct elements.
-Elements are: {} (empty) 
+Distinct set elements are: {} (empty) 
